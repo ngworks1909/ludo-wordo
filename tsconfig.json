@@ -1,15 +1,17 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    "target": "es6", // Use ES6 or higher
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
+    "moduleResolution": "node", // Use Node.js-style module resolution
     "forceConsistentCasingInFileNames": true,
-    "rootDir": "./src",
-    "outDir": "dist",
+    "rootDir": "./src", // Source directory
+    "outFile": "./modules/index.js", // Output directory
     "typeRoots": [
       "./node_modules",
       "node_modules/@types"
     ]
-  }
+  },
+  "include": ["src/**/*.ts"] // Include all TypeScript files in the src directory
 }
